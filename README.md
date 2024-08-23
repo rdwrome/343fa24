@@ -10,10 +10,12 @@ LMSC-261 & MTEC-111 are prerequisites.
 - strudel: effects
 - introduction to hydra (visual livecoding language based on javascript)
 - hydra: sources & modifiers
+- strudel+hydra assignment
 - intro to tidal cycles (audio livecoding language built on supercollider)
 - tidal cycles: samples & synths
 - tidal cycles: effects
 - tidal cycles: polyrhythmic & Euclidean rhythms
+- final concert
 
 ## Everyday Tools
 
@@ -28,8 +30,8 @@ Description|Grade
 ---|---:|
 Attendance and Participation| 30%
 Small Assignments| 30%
-Midterm | 10%
-Final Project | 30%
+strudel+hydra | 10%
+finalconcert | 30%
 **Total**|**100%**
 ### ALL DUE DATES ARE IN CANVAS
 
