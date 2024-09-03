@@ -61,38 +61,34 @@
   - [The Discord](https://discord.gg/8ENjAgBfvX)
   - Reading: ["LiveCoding: A User's Manual" pp.1-8 (chapter one *before* "navigating this book")](https://static.livecodingbook.toplap.org/books/livecoding.pdf)
   - Writing: a .md file in your lc repository outlining *two* things that were new to you/surprised to you in the reading and *two* things that were not new to you/didn't surprise you in the reading.
+  - Hand it in via Github+Canvas as outlined in the syllabus!
   - BRING HEADPHONES!!!
 
-# tidal cycles & its flavors
-- strudel: under development, best when starting, QUITE powerful but you can't play with others
-- estuary: less powerful than strudel but you can play with others
+## tidal cycles & its flavors
+- strudel: under development, best when starting, QUITE powerful but you can't play well with others
+- [estuary: less powerful than strudel but you can play with others](https://estuary.mcmaster.ca/), not covered in this class but you can do it!
 - tidal cycles: MOST POWERFUL (but needs a lot to get going)
+- all three of these environments there is a way to run hydra 
 
-# all three of these environments there is a way to run hydra as well, we're going to go over that as well
-
-# MINI NOTATION
-- GOOD ACROSS ALL THREE PLATFORMS
-
-# SIDE BY SIDE
+### mini-notation comparison
 ```
 // strudel
-`stack(
+stack(
   "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
   "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
   "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
   "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] ",
-).s()`
+).s()
 
 // estuary
-`stack[
+stack[
   s "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
   s "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
   s "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
   s "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] "
-]`
+]
 
 // tidal cycles
-`
 d1 $ stack[
   s "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
   s "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
