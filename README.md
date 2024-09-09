@@ -52,10 +52,6 @@ finalconcert | 30%
       - *if* you submit YouTube links (which is discouraged), they must have TIME STAMPS
     - Correctly document all your debugging, especially if you code ultimately does not run as intended. I will take points off for code that does not run correctly, but will still give partial credit if it is well-documented.
     - For the purposes of this class, your documentation also helps you prepare to talk about your code in class with your colleagues.
-    - In general (unless I specify otherwise), it is permissible to use chat-GPT under the following circumstances:
-      - You put your entire prompt in your Documentation File.
-      - You include a screenshot of your interaction with chat-GPT in your Documentation File.
-      - You write out *in your own words* your understanding of what you learned from using chat-GPT.
 
 ## Instructor Info
 ### <u>Rachel Devorah Wood Rome, Ph.D.</u>
@@ -65,7 +61,7 @@ finalconcert | 30%
 - Office Hours:
 	- Tuesdays 1pm-3pm EST.
 	- Meetings will *always* take place in person at 1126 Boylston Room 208.
-	- Walk-ins welcome, but preference is given to those who make [appointments here.](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUJvY3FWa3g0b3dhfGRlZmF1bHR8OTk1YzM0YTAxMDljZGU5MGEzZjQxNzViOWQ2ZTM3NjA)
+	- Walk-ins welcome, but preference is given to those who make [appointments here.](https://calendar.app.google/ER3N9CgnNFRqi8qE6)
 	- If you are not available during my office hour, you are welcome to use Berklee Google Calendar (be signed into your own account and search for "r.d.w.rome") to look at my whole calendar and make an appointment that way. It is up-to-date; no need to email me. Just drop the appointment in my calendar.
 
 ## Policies
