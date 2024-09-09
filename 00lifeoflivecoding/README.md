@@ -41,7 +41,7 @@
 - Started SuperColliding in 2011, making noise to improvise against on my horn
 - Moved Paris in 2015 without my horn, Laptop became my primary instrument
 - Joined UK-based offal [orchestra for femmes and laptops] in 2016
-- When live coding, I aim to reveal as much as possible about who I am and what I am doing musically. I project my code, reveal my sources, and do not hide my ‘mistakes.’ I am vulnerable, transparently shaping algorithms into avatars and using them as externalized actors of my creative agency. 
+- When live coding, I aim to reveal as much as possible about who I am and what I am doing musically. I project my code, reveal my sources, and do not hide my ‘mistakes.’ I am vulnerable, transparently shaping algorithms into avatars and using them as externalized actors of my creative agency.
 
 ## Who are you?
 
@@ -63,36 +63,3 @@
   - Writing: a .md file in your lc repository outlining *two* things that were new to you/surprised to you in the reading and *two* things that were not new to you/didn't surprise you in the reading.
   - Hand it in via Github+Canvas as outlined in the syllabus!
   - BRING HEADPHONES!!!
-
-## tidal cycles & its flavors
-- strudel: under development, best when starting, QUITE powerful but you can't play well with others
-- [estuary: less powerful than strudel but you can play with others](https://estuary.mcmaster.ca/), not covered in this class but you can do it!
-- tidal cycles: MOST POWERFUL (but needs a lot to get going)
-- all three of these environments there is a way to run hydra 
-
-### mini-notation comparison
-```
-// strudel
-stack(
-  "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
-  "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
-  "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
-  "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] ",
-).s()
-
-// estuary
-stack[
-  s "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
-  s "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
-  s "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
-  s "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] "
-]
-
-// tidal cycles
-d1 $ stack[
-  s "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
-  s "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
-  s "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
-  s "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] "
-] 
-```
