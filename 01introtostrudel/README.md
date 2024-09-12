@@ -1,3 +1,7 @@
+### Headphones?
+
+### Reading?
+
 ## Strudel is based on [TidalCycles](https://tidalcycles.org/)
 - [Everything is pattern-based](https://tidalcycles.org/docs/reference/cycles)
 - Uses JavaScript in the browser (so you don't have to download anything!)
@@ -7,7 +11,8 @@
 - strudel: under development, best when starting, QUITE powerful but you can't play well with others
 - [estuary: less powerful than strudel but you can play with others](https://estuary.mcmaster.ca/), not covered in this class but you can do it!
 - tidal cycles: MOST POWERFUL (but needs a lot to get going)
-- all three of these environments there is a way to run hydra
+- in all three of these environments there is a way to run hydra
+- tidal cycles is a haskell wrapper for supercollider, fyi
 
 ### mini-notation comparison
 ```
@@ -97,6 +102,22 @@ s ("hh!16?")
 
 **everybody now!**
 
+## share a percussion patch
+
+## mixing
+- pan
+
+`s("[bd hh]*2").pan("<.5 1 .5 0>")`
+
+- gain
+
+`s("hh*8").gain(".4!2 1 .4!2 1 .4 1").fast(2)`
+
+
+## Small assignment for next week! A strudel percussion patch you're proud of.
+All in a single markdown file (MD demo)
+
+
 ## noted
 
 - define by midi note
@@ -120,6 +141,8 @@ s ("hh!16?")
 `note ("c <c d e> e").sound("sawtooth")`
 
 **everybody now!**
+
+## share a midi sequence
 
 ## effected
 
