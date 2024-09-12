@@ -2,27 +2,28 @@
 
 ### Reading?
 
-## Strudel is based on [TidalCycles](https://tidalcycles.org/)
+## Strudel is a javaScript wrapper for [TidalCycles](https://tidalcycles.org/)
 - [Everything is pattern-based](https://tidalcycles.org/docs/reference/cycles)
-- Uses JavaScript in the browser (so you don't have to download anything!)
-- Not quite as powerful as TidalCycles...
+	- can be unexpected from a conductor's perspective...
+- Uses javaScript in the browser (so you don't have to download anything!)
+- TidalCycles is a Haskell wrapper for SuperCollider, FYI
 
 ## tidal cycles & its flavors
-- strudel: under development, best when starting, QUITE powerful but you can't play well with others
-- [estuary: less powerful than strudel but you can play with others](https://estuary.mcmaster.ca/), not covered in this class but you can do it!
 - tidal cycles: MOST POWERFUL (but needs a lot to get going)
+- [estuary: less powerful than strudel but you can play with others](https://estuary.mcmaster.ca/), not covered in this class but you can do it!
+- strudel: under development, best when starting, QUITE powerful but you can't play well with others
 - in all three of these environments there is a way to run hydra
-- tidal cycles is a haskell wrapper for supercollider, fyi
+
 
 ### mini-notation comparison
 ```
-// strudel
-stack(
-  "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
-  "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
-  "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
-  "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] ",
-).s()
+// tidal cycles
+d1 $ stack[
+  s "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
+  s "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
+  s "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
+  s "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] "
+]
 
 // estuary
 stack[
@@ -32,14 +33,20 @@ stack[
   s "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] "
 ]
 
-// tidal cycles
-d1 $ stack[
-  s "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
-  s "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
-  s "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
-  s "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] "
-]
+// strudel
+stack(
+  "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
+  "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
+  "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
+  "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] ",
+).s()
+
 ```
+
+## [Strudel](https://strudel.cc/)
+- delete welcome shuffle patch!
+- play
+- update
 
 ## starter pattern commands and syntax
 `s` = sound
@@ -61,6 +68,11 @@ d1 $ stack[
 `s ("bd ~ hh!2")`
 
 **everybody now!**
+
+## Strudel
+- console
+- sounds
+- reference
 
 ## more advanced commands and syntax
 
@@ -88,10 +100,11 @@ d1 $ stack[
 
 **everybody now!**
 
-## stack
+## stack 
 
 `stack (s (" "),
 s (" "))`
+
 
 **stack of example**
 
@@ -111,12 +124,35 @@ s ("hh!16?")
 
 - gain
 
-`s("hh*8").gain(".4!2 1 .4!2 1 .4 1").fast(2)`
+`s("hh*8").gain(".4!2 1 .4!2 1 .4 1")`
+
+## time
+
+- cps
+
+`s("<bd sd>,hh*2").cpm(140)`
+
+- fast
+
+`s("bd hh sd hh").fast(2) `
+
+- slow
+
+`s("bd hh sd hh").slow(2) `
+
+## pattern transformations
+
+- echo
+
+`s("bd sd").echo(3, 1/6, .8)`
+
+- degradeBy
+
+`s("hh*8").degradeBy(0.2)`
 
 
 ## Small assignment for next week! A strudel percussion patch you're proud of.
 All in a single markdown file (MD demo)
-
 
 ## noted
 
