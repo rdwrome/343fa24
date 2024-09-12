@@ -80,7 +80,7 @@ stack(
 
 `,` = layer these atop one another within one cycle
 
-`[ | ]` = randomly choose sample from this list per cycle
+`[ | ]` = randomly choose sample from this array per cycle
 
 `?` = randomly silence
 
@@ -100,27 +100,29 @@ stack(
 
 **everybody now!**
 
-## stack 
-
-`stack (s (" "),
-s (" "))`
-
-
-**stack of example**
-
-`stack (
-s ("bd(7,12)"),
-s ("hh!16?")
-)`
-
-**everybody now!**
-
 ## share a percussion patch
+
+## stack
+
+`stack(
+  "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
+  "[~ ~ ~ ~] [sd ~ ~ ~] [~ ~ ~ ~] [sd ~ ~ ~] ",
+  "[hh ~ hh ~] [hh ~ hh ~] [hh ~ ~ ~] [hh ~ hh ~] ",
+  "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] ",
+).s()`
+
+## more arguments
+
+`"< >"` = chose the next one from this list per cycle
+
+`sine` = wave as floating point between 0 and 1
 
 ## mixing
 - pan
 
 `s("[bd hh]*2").pan("<.5 1 .5 0>")`
+
+`s("[bd hh]*2").pan(sine)`
 
 - gain
 
@@ -140,56 +142,5 @@ s ("hh!16?")
 
 `s("bd hh sd hh").slow(2) `
 
-## pattern transformations
-
-- echo
-
-`s("bd sd").echo(3, 1/6, .8)`
-
-- degradeBy
-
-`s("hh*8").degradeBy(0.2)`
-
-
 ## Small assignment for next week! A strudel percussion patch you're proud of.
 All in a single markdown file (MD demo)
-
-## noted
-
-- define by midi note
-
-`note ("48").sound("sawtooth")`
-
-- or note name
-
-`note ("c").sound("sawtooth")`
-
-- sequence away
-
-`note ("c d e").sound("sawtooth")`
-
-- sequence over multiple cycles
-
-`note ("[c d e]/4").sound("sawtooth")`
-
-- play one per cycle
-
-`note ("c <c d e> e").sound("sawtooth")`
-
-**everybody now!**
-
-## share a midi sequence
-
-## effected
-
-- low pass filter
-
-`note ("c <c d e> e").sound("sawtooth").lpf("<400 500>")`
-
-- 'gain'
-
-`note ("c <c d e> e").sound("sawtooth").lpf("<400 500>").gain(1.2).vowel("<a e i o u>")`
-
-- 'vowel'
-
-`note ("c <c d e> e").sound("sawtooth").lpf("<400 500>").vowel("<a e i o u>")`
