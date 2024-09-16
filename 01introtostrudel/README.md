@@ -102,7 +102,7 @@ stack(
 
 ## share a percussion patch
 
-## stack
+## stacks
 
 `stack(
   "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
@@ -111,7 +111,7 @@ stack(
   "[~ ~ ~ ~] [ho ~ ~ ~] [~ ~ ho ~] [~ ~ ~ ~] ",
 ).s()`
 
-## more arguments
+## arguments and oscillators
 
 `"< >"` = chose the next one from this list per cycle
 
