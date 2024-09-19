@@ -1,4 +1,10 @@
-# patterns 
+# patterns
+
+### samples vs synths
+
+### n vs note
+- [`n` is sometimes short for note, sometimes short for 'iNdex', so beware](https://github.com/tidalcycles/strudel/discussions/395)
+  - [see also](https://tidalcycles.org/docs/patternlib/tutorials/workshop#difference-between-functions-n-and-note)
 
 ## noted
 
@@ -6,13 +12,13 @@
 
 `note ("48").sound("sawtooth")`
 
-- or note name
+- or pitch name
 
-`note ("c").sound("sawtooth")`
+`note ("c3").sound("sawtooth")`
 
 - sequence away
 
-`note ("c d e").sound("sawtooth")`
+`note ("c2 d3 e2").sound("sawtooth")`
 
 - sequence over multiple cycles
 
@@ -24,13 +30,13 @@
 
 - scale
 
-`n("0 2 4 6 4 2").scale("C:major")`
+`n("0 2 4 6 4 2").scale("C:major").sound("sawtooth")`
 
 **everybody now!**
 
 ## share a midi sequence
 
-## sometimes and its cousins
+## [sometimes and its cousins](https://tidalcycles.org/docs/reference/randomness/#the-sometimes-family)
 
 ## transformations
 
