@@ -1,5 +1,11 @@
 # patterns
 
+<!-- N SCALE SYNTH
+
+NOTE PITCH NAME (WITH DEGREE)
+
+ADD OCTAVE info to n scale stuff!!!  -->
+
 ### samples vs synths
 
 ### n vs note
@@ -8,11 +14,7 @@
 
 ## noted
 
-- define by midi note
-
-`note ("48").sound("sawtooth")`
-
-- or pitch name
+- define by pitch name
 
 `note ("c3").sound("sawtooth")`
 
@@ -28,7 +30,7 @@
 
 `note ("c <c d e> e").sound("sawtooth")`
 
-- scale
+- scale (use `n`)
 
 `n("0 2 4 6 4 2").scale("C:major").sound("sawtooth")`
 
@@ -37,6 +39,7 @@
 ## share a midi sequence
 
 ## [sometimes and its cousins](https://tidalcycles.org/docs/reference/randomness/#the-sometimes-family)
+- NEED BETTER DEMO
 
 ## transformations
 
@@ -72,21 +75,3 @@ s("rhodes").loopAt(2)`
 - euclid
 
 `note("c3").euclid(3,8)`
-
-## effected
-
-- x fade
-
-`xfade (s("bd*2"), "<0 .25 .5 .75 1>", s("hh*8"))`
-
-- low pass filter
-
-`note ("c <c d e> e").sound("sawtooth").lpf("<400 500>")`
-
-- 'gain'
-
-`note ("c <c d e> e").sound("sawtooth").lpf("<400 500>").gain(1.2).vowel("<a e i o u>")`
-
-- 'vowel'
-
-`note ("c <c d e> e").sound("sawtooth").lpf("<400 500>").vowel("<a e i o u>")`
