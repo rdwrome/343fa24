@@ -24,11 +24,11 @@ ADD OCTAVE info to n scale stuff!!!  -->
 
 - sequence over multiple cycles
 
-`note ("[c d e]/4").sound("sawtooth")`
+`note ("[c3 d3 e3]/4").sound("sawtooth")`
 
 - play one per cycle
 
-`note ("c <c d e> e").sound("sawtooth")`
+`note ("c2 <c 3d e2> e3").sound("sawtooth")`
 
 - scale (use `n`)
 
@@ -41,12 +41,19 @@ ADD OCTAVE info to n scale stuff!!!  -->
 ## [sometimes and its cousins](https://tidalcycles.org/docs/reference/randomness/#the-sometimes-family)
 - NEED BETTER DEMO
 
-## transformations
+## sample transformations
 
 - loop at
 
 `samples({ rhodes: 'https://cdn.freesound.org/previews/132/132051_316502-lq.mp3' })
 s("rhodes").loopAt(2)`
+
+- begin
+
+`samples({ rave: 'rave/AREUREADY.wav' }, 'github:tidalcycles/dirt-samples')
+s("rave").begin("<0 .25 .5 .75>").fast(2)`
+
+## sophisticated pattern transformations
 
 - degradeBy
 

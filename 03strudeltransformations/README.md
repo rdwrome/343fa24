@@ -1,14 +1,18 @@
 ## homework?
 
-##
-
 ## effected
 
-- x fade
+- pan
 
-`xfade (s("bd*2"), "<0 .25 .5 .75 1>", s("hh*8"))`
+`s("[bd hh]*2").pan("<.5 1 .5 0>")`
 
-- low pass filter
+- gain
+
+`s("hh*8").gain(".4!2 1 .4!2 1 .4 1")`
+
+`note ("c <c d e> e").sound("sawtooth").lpf("<400 500>").gain(1.2)`
+
+- low/high pass filter
 
 `note ("c <c d e> e").sound("sawtooth").lpf("<400 500>")`
 
@@ -16,21 +20,17 @@
 
 `s("<bd sd>,hh*3").fast(2).crush("<16 8 7 6 5 4 3 2>")`
 
-- gain
-
-`note ("c <c d e> e").sound("sawtooth").lpf("<400 500>").gain(1.2)
-
 - vowel
 
 `note ("c <c d e> e").sound("sawtooth").lpf("<400 500>").vowel("<a e i o u>")`
+
+- x fade
+
+`xfade (s("bd*2"), "<0 .25 .5 .75 1>", s("hh*8"))`
 
 - room
 
 `s("bd sd [~ bd] sd").room("<0 .2 .4 .6 .8 1>")`
 
-- begin
-
-`samples({ rave: 'rave/AREUREADY.wav' }, 'github:tidalcycles/dirt-samples')
-s("rave").begin("<0 .25 .5 .75>").fast(2)`
 
 ## [strudel + hydra](https://strudel.cc/learn/hydra/)

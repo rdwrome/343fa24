@@ -103,6 +103,7 @@ stack(
 ## share a percussion patch
 
 ## stacks
+- you gotta watch for what the sound source is
 
 `stack(
   "[bd ~ ~ bd] [~ ~ ~ bd] [~ bd bd ~] [~ ~ ~ ~] ",
@@ -116,17 +117,6 @@ stack(
 `"< >"` = chose the next one from this list per cycle
 
 `sine` = wave as floating point between 0 and 1
-
-## mixing
-- pan
-
-`s("[bd hh]*2").pan("<.5 1 .5 0>")`
-
-`s("[bd hh]*2").pan(sine)`
-
-- gain
-
-`s("hh*8").gain(".4!2 1 .4!2 1 .4 1")`
 
 ## time
 
