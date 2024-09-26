@@ -5,9 +5,8 @@ LMSC-261 & MTEC-111 are prerequisites.
 ## Topics
 - life of livecoding
 - introduction to strudel (audio livecoding language which combines javascript and tidal cycles)
-- strudel : patterns & control flow with samples
-- strudel: lists & arrays with samples
-- strudel: effects
+- strudel : patterns 
+- strudel: transformations
 - introduction to hydra (visual livecoding language based on javascript)
 - hydra: sources & modifiers
 - strudel+hydra assignment
@@ -83,7 +82,7 @@ finalconcert | 30%
 - In an emergency, please call me (really).
 
 ### Grading
-- Assignment extensions are granted more than 12 hours in advance, and will not be granted for the midterm or final.
+-  Two assignment extensions are granted more than 12 hours in advance, and will not be granted for the midterm or final.
 - You will be held to the Berklee Policy on Honesty in Academic Work (see Student Handbook).
 - Late assignments are not accepted.
 - If you have a question or comment about a grade, you must come ask it *in person* at my office hour.
