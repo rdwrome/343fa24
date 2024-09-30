@@ -32,5 +32,13 @@
 
 `s("bd sd [~ bd] sd").room("<0 .2 .4 .6 .8 1>")`
 
+- evaluation
+`
+$: n("[0 .. 8]*8/9").scale("C:minor:pentatonic")
+
+_$: s("bd*4").bank('RolandTR909')
+`
+
+## project
 
 ## [strudel + hydra](https://strudel.cc/learn/hydra/)
