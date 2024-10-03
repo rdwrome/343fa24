@@ -5,13 +5,14 @@
 # [video synth basics](https://hydra.ojack.xyz/docs/docs/learning/video-synth-basics/)
 # [functions](https://hydra.ojack.xyz/functions)
 
-##eternal sources
+## eternal sources
 	- initCam
 	- initImage
 	- initVideo
 	- init
 	- initStream
 	- initScreen
+	
 ## blend
 	- add
 	- sub
@@ -19,6 +20,7 @@
 	- blend
 	- mult
 	- diff
+	
 ## modulate
 	- modulateRepeat
 	- modulateRepeatX
@@ -31,6 +33,7 @@
 	- modulatePixelate
 	- modulateRotate
 	- modulateHue
+	
 ## synth settings
 	- render
 	- update

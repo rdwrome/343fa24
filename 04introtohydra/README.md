@@ -17,8 +17,7 @@
 	- gradient
 	- src
 	- solid
-	- prev
-	- out
+	
 ## geometry
 	- rotate
 	- scale
@@ -30,6 +29,7 @@
 	- scroll
 	- scrollX
 	- scrollY
+	
 ## color
 	- posterize
 	- shift
