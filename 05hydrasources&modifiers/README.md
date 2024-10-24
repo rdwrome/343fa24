@@ -1,9 +1,9 @@
 ### project due next week
 
-# [strudel + hydra](https://strudel.cc/learn/hydra/)
-
 # [video synth basics](https://hydra.ojack.xyz/docs/docs/learning/video-synth-basics/)
 # [functions](https://hydra.ojack.xyz/functions)
+
+## [so you don't want to show your code...](https://www.youtube.com/watch?v=b9VS7Q86T-Y&list=PL82ekYXUXbcSDipIPs6Df1YpG6s68WJRu&index=13&t=2s)
 
 ## eternal sources
 	- initCam
@@ -47,4 +47,4 @@
 	- time
 	- mouse
 
-## [so you don't want to show your code...](https://www.youtube.com/watch?v=b9VS7Q86T-Y&list=PL82ekYXUXbcSDipIPs6Df1YpG6s68WJRu&index=13&t=2s)
+## [strudel + hydra](https://strudel.cc/learn/hydra/)

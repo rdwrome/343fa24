@@ -4,7 +4,6 @@
 
 ## SuperCollider
 - Audio Engine is now SuperCollider
-- Yes, still running samples, but may also control synths!
 - You may now also send out clock information! (but not receive it, sorry)
 
 ## Tidal Cycles Dependencies
