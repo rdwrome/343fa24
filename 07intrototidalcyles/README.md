@@ -26,8 +26,10 @@
 `d1 $ n "0 2 4 6 0 2 6 8" # sound "cyclo"`
 
 # pulsar & hydra
-- pulsar/atom package
-  - (gotta install [node.js](https://nodejs.org/en/download/))
+- install brew: `https://brew.sh/`
+- install [node.js](https://nodejs.org/en/download/) with 'brew' commands
+- install pulsar/atom package
+- quit everything and reopen
   
  # recording your tc/hydra session in pulsar with OBS
   
