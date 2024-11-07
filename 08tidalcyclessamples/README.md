@@ -47,6 +47,7 @@
   - `hush`
   - `# silence`
   - `-- comment`
+  - need to change audio output device?: `Server.default.options.outDevice_("External Headphones");`
 
 ### mixing and effects
 - xfade. orbit name is argument.
