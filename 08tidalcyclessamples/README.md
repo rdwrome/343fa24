@@ -1,17 +1,5 @@
 # Tidal Cycles
 
-## Tidal Cycles
-### [Tutorials](https://tidalcycles.org/docs/patternlib/tutorials/workshop)
-### [Reference](https://tidalcycles.org/docs/reference/cycles)
-### [Discourse](https://club.tidalcycles.org/)
-### [Great Haskell Help](https://learnyouahaskell.com/chapters)
-
-### [MiniTidal/MiniNotation](https://tidalcycles.org/docs/reference/mini_notation)
-
-### new to us from minitidal
-- [i make money moves: the meaning(s) of `$` and orbits](https://tidalcycles.org/docs/innards/meaning_of_dollar)
-- [operators](https://tidalcycles.org/docs/reference/pattern_structure)
-
 ### starting up refresher
     - select your preferred audio output device in AudioMidi Setup
     - open SuperCollider
@@ -24,6 +12,35 @@
     - monitor in Pulsar and SuperCollider post windows
     - (did you already know a little sc? SuperDirt the quark boots sc itself, so please don't boot before using the quark)
 
+## Tidal Cycles
+### [Tutorials](https://tidalcycles.org/docs/patternlib/tutorials/workshop)
+### [Reference](https://tidalcycles.org/docs/reference/cycles)
+### [Discourse](https://club.tidalcycles.org/)
+### [Great Haskell Help](https://learnyouahaskell.com/chapters)
+
+### [MiniTidal/MiniNotation](https://tidalcycles.org/docs/reference/mini_notation)
+`s` = sound
+
+`" "` = what to fit inside one cycle
+
+`~` = silence
+
+`!` = repeat
+
+`[ ]` = nest these within one pulse of the cycle
+
+`,` = layer these atop one another within one cycle
+
+`[ | ]` = randomly choose sample from this array per cycle
+
+`?` = randomly silence
+
+`( , )` = spread this many pulses over this many pulses per cycle
+
+### new to us from minitidal
+- [i make money moves: the meaning(s) of `$` and orbits](https://tidalcycles.org/docs/innards/meaning_of_dollar)
+- [operators](https://tidalcycles.org/docs/reference/pattern_structure)
+
 ## execute
   - shift, return for one line
   - control, return for multiple lines
@@ -32,7 +49,7 @@
   - `-- comment`
 
 ### mixing and effects
-- xfade. orbit is argument.
+- xfade. orbit name is argument.
 
 `d1 $ s "hh*16?"`
 
@@ -56,11 +73,11 @@
 
 - crush. bitcrush with 1-16 argument
 
-`d1 $ s "wobble" # crush "[4|8|12]"`
+`d1 $ s "wobble" # crush "[2 | 16]"`
 
 - squiz. weird pitchshifter with arguments in multiples of two.
 
-`d1 $ s "wobble" # squiz "[4|8|12]"`
+`d1 $ s "wobble" # squiz "[2 | 16]"`
 
 ### pattern transformation
 
