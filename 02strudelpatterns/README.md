@@ -4,7 +4,16 @@
 
 NOTE PITCH NAME (WITH DEGREE)
 
-ADD OCTAVE info to n scale stuff!!!  -->
+ADD OCTAVE info to n scale stuff!!!  
+
+FROM SUPERDIRT:
+## N vs Note For Real
+- You can never mix "note" and "n" within a single orbit
+- With Samples, n meant iNdex, so it was which sample from the index you wanted to play
+- With Samples, note meant: take this one sample but slow/speed it up to pitch it down and up and play the pitches as notes
+- Now, with Synths: note and n mean the same thing, but you still can't mix them within a single orbit BUT pitch names == scale degree and ARE interchangeable, e.g.
+`d3 $ n "0 2 e 6 0 b 6 8" # s "cyclo"`
+-->
 
 ### samples vs synths
 

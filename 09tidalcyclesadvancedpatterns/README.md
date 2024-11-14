@@ -10,6 +10,34 @@
 ## yes, you can change bps
 `setcps (115/60/4)`
 
+### samples
+
+### selecting specific samples in a group
+
+- striate. cuts sample into the parameter, plays progressive cut per loop. (can't use with pattern, but we'll get to that with "slice").
+
+`d5 $ striate 3 $ s "print:0 print:1 print:2"`
+
+- begin. where to begin in sample.
+
+`d6 $ s "bev" # begin 0.5`
+
+- end. where to end in sample.
+
+`d6 $ s "bev" # begin 0.5 # end 0.65`
+
+- loop. argument is to stretch the sample over these many patterns, then start again.
+
+`d6 $ loopAt 8 $ s "bev"`
+
+- slice. first argument is how many slices to make of the sample, second argument is which sample to choose per pattern.
+
+`d6 $ slice 16 "[2|4|8|16]" $ s "bev"`
+
+- random slice. argument is how many slices to make of the sample, which one is random.
+
+`d6 $ randslice 8 $ s "bev"`
+
 ### advanced pattern transformation
 
 - one hit. NO ORBIT!
@@ -49,32 +77,6 @@
 - operators a la rachelle with samples (pentatonic clusters + just a *touch* of randomness)
 
 `d5 $ n ("1 ~ 2 [3 2] ~" |+ irand 11) # s "print"`
-
-### samples
-
-- striate. cuts sample into the parameter, plays progressive cut per loop. (can't use with pattern, but we'll get to that with "slice").
-
-`d5 $ striate 3 $ s "print:0 print:1 print:2"`
-
-- begin. where to begin in sample.
-
-`d6 $ s "bev" # begin 0.5`
-
-- end. where to end in sample.
-
-`d6 $ s "bev" # begin 0.5 # end 0.65`
-
-- loop. argument is to stretch the sample over these many patterns, then start again.
-
-`d6 $ loopAt 8 $ s "bev"`
-
-- slice. first argument is how many slices to make of the sample, second argument is which sample to choose per pattern.
-
-`d6 $ slice 16 "[2|4|8|16]" $ s "bev"`
-
-- random slice. argument is how many slices to make of the sample, which one is random.
-
-`d6 $ randslice 8 $ s "bev"`
 
 ## Recording
 ```SuperCollider

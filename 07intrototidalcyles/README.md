@@ -34,8 +34,9 @@
     cd atom-hydra
     ppm install
     ppm link `
+ - quit everything and reopen
   
- # recording your tc/hydra session in pulsar with OBS
+ # recording your tc/hydra session in pulsar with OBS advice
   
  ## Virtual Audio Interfaces
 - [BlackHole](https://existential.audio/blackhole/)
